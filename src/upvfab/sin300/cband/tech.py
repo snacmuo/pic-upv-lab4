@@ -41,7 +41,7 @@ class LayerMapUPVfab(LayerMap):
     # So for the strip waveguide we must use (11,0)
     # For the rib ? 
 
-    WG: Layer = (1, 0)  # type: ignore    
+    WG: Layer = (1, 0)  # type: ignore    # TBD: Define the layer for the waveguide core, maybe (11,0) or (2,0) depending on the thickness we want to achieve
     SLAB: Layer = (21, 0)  # type: ignore
     
     HEATER: Layer = (4, 0) # type: ignore
@@ -135,7 +135,7 @@ class Tech:
     radius_rib = 150
     radius_ro = 25
     width = 1.0
-    width_rib = 1.0
+    width_rib = 1.0                           # Se ponen los valores que saldrám predefinidos en el PDK, pero se pueden modificar a voluntad para generar nuevas geometrías
     width_ro = 0.5
 
     width_slab = 14.5
